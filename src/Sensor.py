@@ -19,6 +19,6 @@ class Data(Structure):
                ("accelerometer",  c_double * 3),
                ("gyro",           c_double * 3),
                ("magnetometer",   c_double * 3),
-               ("pressureSensor", c_double * 1),
+               ("pressureSensor", c_double    ),
                ("isEnabled",      c_bool   * 4)
                ]
