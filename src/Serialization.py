@@ -1,8 +1,7 @@
 from ctypes import *
 
 def Pack(ctype_instance):
-    buf = string_at(byref(ctype_instance), sizeof(ctype_instance))
-    return buf
+    return string_at(addressof(ctype_instance), sizeof(ctype_instance))
 
 def Unpack(ctype, buf):
     cstring = create_string_buffer(buf)
