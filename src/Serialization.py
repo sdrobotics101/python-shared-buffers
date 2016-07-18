@@ -1,14 +1,12 @@
 from ctypes import *
 
+# converts a ctype into a string
 def Pack(ctype_instance):
-    buf = string_at(addressof(ctype_instance), sizeof(ctype_instance))
-    string = ''.join([chr(i) for i in buf])
-    return string
+    return string_at(addressof(ctype_instance), sizeof(ctype_instance)).decode('latin1')
 
+# convert from string to ctype
 def Unpack(ctype, string):
-    # buf = str.encode(string)
-    buf = bytearray()
-    buf.extend(map(ord, string))
+    buf = string.encode('latin1')
     cstring = create_string_buffer(buf)
     ctype_instance = cast(pointer(cstring), POINTER(ctype)).contents
     return ctype_instance
