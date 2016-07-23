@@ -10,3 +10,8 @@ class Health(Structure):
               ("saturated", c_uint8),
               ("direction", c_uint8)
               ]
+
+class Outputs(Structure):
+    _fields_= [
+              ("motors", c_double * 8)
+              ]
