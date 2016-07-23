@@ -27,5 +27,5 @@ xaxis = 0
 yaxis = 1
 zaxis = 2
 
-position = 0
-time = 1
+POSITION = 0
+TIME = 1
