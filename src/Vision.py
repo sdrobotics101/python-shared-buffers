@@ -5,8 +5,8 @@ class Location(Structure):
         ("x", c_double),
         ("y", c_double),
         ("z", c_double),
-        ("confidence", c_char),
-        ("type", c_char)
+        ("confidence", c_uint8),
+        ("type", c_uint8)
     ]
 
 class LocationArray(Structure):
