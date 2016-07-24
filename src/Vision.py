@@ -9,7 +9,7 @@ class Location(Structure):
         ("type", c_char)
     ]
 
-class ForwardVision(Structure):
+class LocationArray(Structure):
     _fields_ = [
         ("locations", Location * 3)
     ]
