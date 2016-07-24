@@ -28,3 +28,6 @@ for i in range(3):
 for i in range(3):
     print(unpacked.acc[i])
 ```
+Forward is x
+Right is y
+Down is z
