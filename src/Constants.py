@@ -28,7 +28,12 @@ SONAR_SERVER_IP = "10.0.0.47"
 xaxis = 0
 yaxis = 1
 zaxis = 2
-waxis = 3
+
+# quaternion
+QUAT_W = 0
+QUAT_X = 1
+QUAT_Y = 2
+QUAT_Z = 3
 
 # angular values
 POSITION = 0
