@@ -6,7 +6,7 @@ class Location(Structure):
         ("y", c_double),
         ("z", c_double),
         ("confidence", c_uint8),
-        ("type", c_uint8)
+        ("loctype", c_uint8)
     ]
 
 class LocationArray(Structure):
