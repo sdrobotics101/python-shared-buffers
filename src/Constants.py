@@ -30,3 +30,11 @@ zaxis = 2
 
 POSITION = 0
 TIME = 1
+
+# Location.type
+NONE = 0
+RED = 1
+YELLOW = 2
+GREEN = 3
+GATEPOLE = 4
+
