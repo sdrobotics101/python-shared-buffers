@@ -29,6 +29,12 @@ xaxis = 0
 yaxis = 1
 zaxis = 2
 
+# quaternion
+QUAT_W = 0
+QUAT_X = 1
+QUAT_Y = 2
+QUAT_Z = 3
+
 # angular values
 POSITION = 0
 TIME = 1
