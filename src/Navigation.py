@@ -18,6 +18,6 @@ class Outputs(Structure):
 
 class PhysicalOutput(Structure):
     _fields_ = [
-               ("force",  c_double * 8),
-               ("torque", c_double * 8)
+               ("force",  c_double * 3),
+               ("torque", c_double * 3)
                ]
