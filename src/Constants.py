@@ -56,3 +56,8 @@ GOAL_FIND_PATH = 5
 
 # variable confidence level
 CONFIDENCE = 128
+
+#variable x, y, and z velocities for dead reckoning
+XVEL = 3
+YVEL = 3
+ZVEL = 0
