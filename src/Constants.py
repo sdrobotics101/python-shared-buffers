@@ -53,9 +53,16 @@ GOAL_FIND_RED_BUOY = 2
 GOAL_FIND_YELLOW_BUOY = 3
 GOAL_FIND_GREEN_BUOY = 4
 GOAL_FIND_PATH = 5
+GOAL_FIND_OCTOGON = 6
 
 # variable confidence level
 CONFIDENCE = 128
+
+# depth
+DEPTH = 2
+
+# velocity in m/s
+VELOCITY = 1
 
 #variable x, y, and z velocities for dead reckoning
 XVEL = 3
