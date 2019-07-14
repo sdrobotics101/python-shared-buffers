@@ -13,10 +13,9 @@ class Motor(Enum):
     OUTPUTS = "outputs"
 
 
-class Target(Enum):
-    TARGET_LOCATION = "targetlocation"
-    TARGET_LOCATION_AND_ROTATION = "targetLocAndRot"
-
+class Vision(Enum):
+    FORWARD_DETECTION = "forwarddetection"
+    DOWNWARD_DETECTION = "downwarddetection"
 
 class Master(Enum):
     CONTROL = "control"
