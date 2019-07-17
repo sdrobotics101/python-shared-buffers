@@ -1,4 +1,4 @@
-from ctypes import Union, c_double, c_float, c_uint8, c_bool
+from ctypes import Union, c_double, c_float, c_uint8, c_bool, Structure
 
 
 class AxisControl(Union):

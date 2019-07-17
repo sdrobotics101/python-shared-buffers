@@ -1,4 +1,4 @@
-from enum import Enum
+from enum import Enum, IntEnum
 
 
 class Sensor(Enum):
@@ -23,13 +23,13 @@ class Master(Enum):
     SENSOR_RESET = "sensorreset"
 
 
-class ServerID(Enum):
-    MASTER_SERVER_ID = 42
-    SENSOR_SERVER_ID = 43
-    MOTOR_SERVER_ID = 44
-    FORWARD_VISION_SERVER_ID = 45
-    DOWNWARD_VISION_SERVER_ID = 46
-    SONAR_SERVER_ID = 47
+class ServerID(IntEnum):
+    MASTER = 42
+    SENSOR = 43
+    MOTOR = 44
+    FORWARD_VISION = 45
+    DOWNWARD_VISION = 46
+    SONAR = 47
 
 
 class PiIP(Enum):
@@ -42,14 +42,14 @@ class PiIP(Enum):
 
 
 # axes
-class Axes(Enum):
+class Axes(IntEnum):
     xaxis = 0
     yaxis = 1
     zaxis = 2
 
 
 # quaternion
-class Quaternion(Enum):
+class Quaternion(IntEnum):
     QUAT_W = 0
     QUAT_X = 1
     QUAT_Y = 2

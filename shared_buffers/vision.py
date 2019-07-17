@@ -6,7 +6,7 @@ class Detection(Structure):
         ("x", c_double),
         ("y", c_double),
         ("size", c_uint8),
-        ("class", c_uint8),
+        ("type", c_uint8),
     ]
 
 class DetectionArray(Structure):

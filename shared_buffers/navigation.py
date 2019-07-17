@@ -1,4 +1,4 @@
-from ctypes import c_bool, c_double, c_uint8
+from ctypes import c_bool, c_double, c_uint8, Structure
 
 
 class Kill(Structure):
