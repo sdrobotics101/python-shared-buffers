@@ -5,8 +5,8 @@ class Detection(Structure):
     _fields_ = [
         ("x", c_double),
         ("y", c_double),
-        ("size", c_uint8),
-        ("type", c_uint8),
+        ("size", c_double),
+        ("cls", c_uint8),
     ]
 
 class DetectionArray(Structure):
