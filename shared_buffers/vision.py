@@ -5,7 +5,8 @@ class Detection(Structure):
     _fields_ = [
         ("x", c_double),
         ("y", c_double),
-        ("size", c_double),
+        ("w", c_double),
+        ("h", c_double),
         ("cls", c_uint8),
     ]
 
