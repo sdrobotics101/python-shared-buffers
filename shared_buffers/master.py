@@ -1,4 +1,4 @@
-from ctypes import Union, c_double, c_float, c_uint8, c_bool, Structure
+from ctypes import Union, c_double, c_float, c_uint8, c_uint16, c_bool, Structure
 
 
 class AxisControl(Union):
@@ -19,3 +19,9 @@ class Goals(Structure):
 
 class SensorReset(Structure):
     _fields_ = [("pos", c_double * 3), ("reset", c_bool)]
+
+class Status(Structure):
+    _fields_ = [
+        ("macrostate", c_uint16),
+        ("microstate", c_uint16)
+    ]
