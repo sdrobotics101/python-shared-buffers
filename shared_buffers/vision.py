@@ -8,7 +8,7 @@ class Detection(Structure):
         ("w", c_double),
         ("h", c_double),
         ("size", c_double),
-        ("conf", c_double),
+        ("cnf", c_double),
         ("cls", c_uint8),
         ("id", c_uint16)
     ]
