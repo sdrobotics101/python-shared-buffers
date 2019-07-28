@@ -1,4 +1,4 @@
-from ctypes import Structure, c_double, c_uint8, c_char
+from ctypes import Structure, c_double, c_uint8, c_uint16, c_char
 
 
 class Detection(Structure):
@@ -8,7 +8,9 @@ class Detection(Structure):
         ("w", c_double),
         ("h", c_double),
         ("size", c_double),
+        ("conf", c_double),
         ("cls", c_uint8),
+        ("id", c_uint16)
     ]
 
 class DetectionArray(Structure):
