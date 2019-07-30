@@ -12,6 +12,8 @@ class ControlInput(Structure):
         ("mode", c_uint8),
     ]
 
+class DropperInput(Structure):
+    _fields_ = [("droppers", c_bool * 2)]
 
 class Goals(Structure):
     _fields_ = [("forwardVision", c_uint8), ("downVision", c_uint8), ("sonar", c_uint8)]
