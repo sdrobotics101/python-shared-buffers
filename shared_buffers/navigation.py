@@ -14,3 +14,6 @@ class RawOutputs(Structure):
 
 class PhysicalOutput(Structure):
     _fields_ = [("force", c_double * 3), ("torque", c_double * 3)]
+
+class DropperOutput(Structure):
+    _fields_ = [("droppers", c_bool * 2)]
